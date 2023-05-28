@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-artist=$(mpc -f %artist% | sed -n '1p' | sed 's/ /\-/g')
-album=$(mpc -f %album% | sed -n '1p' |sed 's/ /\-/g')
-
-path=(/home/oven/Music/.covers/$artist-$album)
-
-cp ${path[@]} ~/Music/.covers/active-cover

@@ -1,0 +1,11 @@
+// layout_file.kdl
+
+layout {
+    pane split_direction="vertical" {
+        pane command="ncmpcpp" size="70%"
+        pane split_direction="horizontal" {
+            pane command="./Code/art.sh/display" size="60%"
+            pane command="ncmpcpp"
+        }
+    }
+}
